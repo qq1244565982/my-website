@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地下城探险</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>地下城探险</h1>
+        <div id="characterSelection">
+            <h2>选择你的角色:</h2>
+            <button onclick="selectCharacter('warrior')">勇士</button>
+            <button onclick="selectCharacter('mage')">法师</button>
+            <button onclick="selectCharacter('hunter')">猎人</button>
+        </div>
+        <div id="gameplay" style="display: none;">
+            <h2>欢迎，<span id="characterName"></span>！</h2>
+            <button onclick="startBattle()">开始战斗</button>
+            <div id="battleLog"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
